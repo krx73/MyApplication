@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".four_games.Game_3">
+
+    <LinearLayout
+        android:id="@+id/header_listening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/strelka_icon"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="16dp"
+            android:fontFamily="@font/fredoka"
+            android:padding="7dp"
+            android:text="Listening"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_listening">
+
+        <TextView
+            android:id="@+id/textView_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredoka"
+            android:gravity="center"
+            android:text="cucumber"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_transcription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredoka"
+            android:gravity="center"
+            android:text="[ 'kju:kʌmbə ]"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_textViews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_word"
+        app:layout_constraintBottom_toTopOf="@id/button_record">
+
+        <TextView
+            android:id="@+id/textView_third_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Please press the button to record your pronunciation of word above"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/layout_word" />
+
+
+        <TextView
+            android:id="@+id/textView_listening_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:background="@color/gray_background"
+            android:fontFamily="@font/fredoka"
+            android:hint="Your record will be here"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_record"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:backgroundTint="@color/record_button"
+        android:text="🎙️"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

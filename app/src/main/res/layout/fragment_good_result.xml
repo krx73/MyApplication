@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".four_games.GoodResult">
+
+    <LinearLayout
+        android:id="@+id/head_bad_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/strelka_icon"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="16dp"
+            android:fontFamily="@font/fredoka"
+            android:padding="7dp"
+            android:text="Guess the animal"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/icon_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎉"
+        android:textSize="160sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_bad_res"
+        android:layout_marginVertical="30dp"/>
+
+    <TextView
+        android:id="@+id/text_bad_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Holy Molly! That is Right!"
+        android:fontFamily="@font/fredoka"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_cat"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginVertical="20dp"/>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_btn"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fredoka"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text_bad_res"
+        android:layout_margin="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
